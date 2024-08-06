@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block content %}
 <h1>Menu</h1>
 <!--Begin col-->
-<div class="flex-container">
-    
+
     {% for item in menu %}
     <!-- Title for Menu item -->
-    <div class="flex-item">
+    <article>
         <h2>{{ item.title }}</h2>
         <!-- Image of Menu item -->
         {%if item.title == "Grilled Fish"%}
@@ -42,8 +42,8 @@
                 ${{ item.price }}
             </span>
         </p>
-    </div>
+    </article>
     {% endfor %}
-</div>
+
 <!--End col-->
 {% endblock %}
