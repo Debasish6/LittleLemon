@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Menu</h1>
+<!--Begin col-->
+<div class="flex-container">
+    
+    {% for item in menu %}
+    <!-- Title for Menu item -->
+    <div class="flex-item">
+        <h2>{{ item.title }}</h2>
+        <!-- Image of Menu item -->
+        {%if item.title == "Grilled Fish"%}
+            <img src="{% static 'img/Grilled Fish.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Lemon Dessert"%}
+            <img src="{% static 'img/Lemon Dessert.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Beef Pasta"%}
+            <img src="{% static 'img/Beef Pasta.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Tomato Pasta"%}
+            <img src="{% static 'img/Tomato Pasta.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Bruschetta"%}
+            <img src="{% static 'img/Bruschetta.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Greek Salad"%}
+            <img src="{% static 'img/Greek Salad.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Cheese sticks"%}
+            <img src="{% static 'img/Cheese sticks.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Tiramisu"%}
+            <img src="{% static 'img/Tiramisu.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Strawberry Cheesecake"%}
+            <img src="{% static 'img/Strawberry Cheesecake.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Rosgolla"%}
+            <img src="{% static 'img/Rosogolla.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%elif item.title == "Chicken Kabab"%}
+            <img src="{% static 'img/Chicken Kabab.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {%else%}
+            <img src="{% static 'img/Tandoori chicken.jpg' %}" alt="{{ item.title }}" width="400" height="360">
+        {% endif %}
+        <!-- Description for Menu Item -->
+        <p>
+            {{ item.title }}
+            <span class="menu-price">
+                ${{ item.price }}
+            </span>
+        </p>
+    </div>
+    {% endfor %}
+</div>
+<!--End col-->
+{% endblock %}
