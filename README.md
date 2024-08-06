@@ -1,7 +1,6 @@
 # Little-Lemon
 
-API End Points:
-
+API End Points: <br>
     api/ <br>
     api/about/ <br>
     api/menu/ <br>
