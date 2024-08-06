@@ -3,18 +3,18 @@
 API End Points:
 
     api/ <br>
-    api/about/ 
-    api/menu/
-    api/book/ 
-    api/bookings
-    api/menu-items
-    api/menu-items/<int:pk>
-    api/groups/manager/users
-    api/groups/manager/users/<int:pk>
-    api/groups/delivery-crew/users
-    api/groups/delivery-crew/users/<int:pk>
-    api/cart/menu-items
-    api/orders
-    api/orders/<int:pk> 
-    api/category
-    api/obtain-auth-token/
+    api/about/ <br>
+    api/menu/ <br>
+    api/book/ <br>
+    api/bookings <br>
+    api/menu-items <br>
+    api/menu-items/<int:pk> <br>
+    api/groups/manager/users <br>
+    api/groups/manager/users/<int:pk> <br>
+    api/groups/delivery-crew/users <br>
+    api/groups/delivery-crew/users/<int:pk> <br>
+    api/cart/menu-items <br>
+    api/orders <br>
+    api/orders/<int:pk>  <br>
+    api/category <br>
+    api/obtain-auth-token/ <br>
